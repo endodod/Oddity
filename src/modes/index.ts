@@ -2,12 +2,12 @@ import { diceMode } from "./dice";
 import { cardMode } from "./cards";
 import { coordinateMode } from "./coordinates";
 import { timeCapsuleMode } from "./timecapsule";
-
-// Number and Letter mode engines from the original spec plug in here the same way:
-// import { numberMode } from "./number";
-// import { letterMode } from "./letters";
+import { numberMode } from "./number";
+import { letterMode } from "./letters";
 
 export const MODES = {
+  number: numberMode,
+  letters: letterMode,
   dice: diceMode,
   cards: cardMode,
   coordinates: coordinateMode,
